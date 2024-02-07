@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika di Non Boolean</title>
+  </head>
+  <body>
+    <script>
+      /* Operator || di non boolean:
+            - Operator || membaca dari kiri ke kanan
+            - Ambil nilai pertama yang Truthy
+            - Jika tidak ada nilai Truhty, ambil value terakhir
+        */
+      console.info("null" || "undefined"); // null
+      console.info("null" || null); // "null"
+      console.info(0 || "0"); // "0"
+      console.info(NaN || 0); // 0
+
+      /* Operator && di non boolean:
+            - Operator && membaca dari kiri ke kanan
+            - Ambil nilai pertama yang Falsy
+            - Jika tidak ada nilai Falsy, ambil value terakhir
+        */
+      console.info(null && undefined); // null
+      console.info("" && []); // ""
+      console.info("0" && 0); // 0
+      console.info("null" && "undefined"); // "undefined"
+    </script>
+  </body>
+</html>

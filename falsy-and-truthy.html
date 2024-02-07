@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falsy and Truthy</title>
+  </head>
+  <body>
+    <script>
+      /* Falsy Value
+            false       : Boolean false
+            0, -0       : Number 0 dan -0 dianggap false
+            "", '', ``  : Semua string kosong dianggap false
+            null        : null dianggap false
+            undefined   : undefined dianggap false
+            NaN         : Not a Number dianggap false
+
+            Truthy Value : Is a data that is not Falsy
+        */
+
+      let falsy;
+      if (falsy) {
+        alert(`Truthy`);
+      } else {
+        alert(`Falsy`);
+      }
+
+      let truthy = "undefined";
+      if (truthy) {
+        alert(`Truthy`);
+      } else {
+        alert(`Falsy`);
+      }
+    </script>
+  </body>
+</html>

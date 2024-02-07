@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <script>
+      {
+        // alert
+        alert(`Hello there`);
+      }
+
+      {
+        // prompt
+        const name = prompt(`Your name is?`);
+        alert(`Hello ${name}`);
+      }
+
+      {
+        // confirm
+        const answer = confirm(`Your answer ?`);
+        if (answer) {
+          const respond = prompt(`Yes or No ?`);
+          alert(`${respond}, we will go dinner tomorrow!`);
+        } else {
+          alert(`Okay.`);
+        }
+      }
+    </script>
+  </body>
+</html>

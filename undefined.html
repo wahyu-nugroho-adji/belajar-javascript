@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undefined</title>
+  </head>
+  <body>
+    <script>
+      // undefined variable value
+      let value = 1;
+      if (value === undefined) {
+        console.info(value);
+      } else {
+        console.info(`DEFINED`);
+      }
+
+      // undefined array value
+      const fruits = ["apple"];
+      if (fruits[0] === undefined) {
+        console.info(`We don't have fruit`);
+      } else {
+        console.info(`This is ${fruits[0]}`);
+      }
+
+      // undefined object value
+      const person = {
+        name: "nugroho",
+      };
+      if (person.name === undefined) {
+        console.info(`Hello There`);
+      } else {
+        console.info(`Hello ${person.name}`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      /* Operasi pada object:
+            varObject[property] = value   : Menambah atau mengubah property atau value pada object
+            delete varObject[property]    : Menghapus property dan value pada object
+
+        */
+
+      const buah = {};
+
+      // Menambah property dan value di object
+      buah["Nama"] = "Apel";
+      buah["Warna"] = "Merah";
+      buah["berat"] = 150;
+      console.table(buah);
+
+      // Menghapus property dan value di object
+      delete buah["berat"];
+      console.table(buah);
+
+      // Mengubah value di object
+      buah["Nama"] = "Mangga";
+      buah["Warna"] = "Oren";
+      console.table(buah);
+
+      // Membuat object secara langsung
+      const orang = {
+        "nama lengkap": "Wahyu Nugroho",
+        usia: 22,
+      };
+      console.table(orang);
+
+      // Menghapus property dan value pada object
+      delete orang["usia"];
+      console.table(orang);
+
+      // Menambah property dan value pada object
+      orang["namaBelakang"] = "Adji";
+      console.table(orang);
+
+      // Mengambil value dengan property di object
+      console.info(`Nama Lengkap: ${orang["nama lengkap"]}`);
+      console.info(`Nama Belakang: ${orang.namaBelakang}`);
+    </script>
+  </body>
+</html>

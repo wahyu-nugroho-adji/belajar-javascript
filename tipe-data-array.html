@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+  </head>
+  <body>
+    <script>
+      /* Operasi di array 
+            array.push(value)   : Menambah value baru pada array
+            array.lenght        : Menghitung panjang array bukan index array
+            array[index]        : Mengambil data array di posisi index
+            array[index] = value: Mengubah data array di posisi index
+            delete array[index] : Menghapus data array di posisi index,
+                                  namun index tidak bergeser
+        */
+
+      const array = [];
+      array.push("wahyu");
+      array.push("nugroho", "adji");
+
+      console.table(array);
+      console.info(array[0]);
+
+      array[0] = "bayu";
+      console.table(array);
+
+      delete array[2];
+      console.table(array);
+      console.info(array[2]);
+      console.info(array.length);
+
+      array[2] = "value baru";
+      console.table(array);
+
+      array.push(["multi", "dimensional", "array"]);
+      console.table(array);
+    </script>
+  </body>
+</html>

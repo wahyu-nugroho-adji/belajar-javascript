@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do While Loop</title>
+  </head>
+  <body>
+    <script>
+      /*  Do While Loop: Similar to While loop. The difference is
+            While loop will check the condition first and excecute 
+            loop code after. Do While Loop will executed the loop 
+            code first and check the condition after. So it will 
+            executed 1 code minimal even if the condition is !true.
+        */
+
+      let counter = 1;
+      do {
+        document.writeln(`<p>Perulangan: ${counter}</p>`);
+        counter++; // post statement
+      } while (counter <= 5);
+    </script>
+  </body>
+</html>

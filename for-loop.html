@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      /* For Loop syntax:
+            for(init statement; condition; post statement){
+                // block loop
+            }
+        */
+
+      // Infinite Loop Code:
+      // for(;;){
+      // alert(`Infinite Loop`)
+      // }
+
+      // For Loop with condition
+      {
+        let counter = 1;
+        for (; counter <= 5; ) {
+          document.writeln(`<p>Perulangan: ${counter}</p>`);
+          counter++; // post statement
+        }
+      }
+
+      // For loop with init statement
+      {
+        for (let counter = 6; counter <= 10; ) {
+          document.writeln(`<p>Perulangan: ${counter}</p>`);
+          counter++; // post statement
+        }
+      }
+
+      // For loop with post statement
+      {
+        for (let counter = 11; counter <= 15; counter++) {
+          document.writeln(`<p>Perulangan: ${counter}</p>`);
+        }
+      }
+    </script>
+  </body>
+</html>

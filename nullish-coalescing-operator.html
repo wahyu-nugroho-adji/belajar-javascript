@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nullish Coalescing Operator</title>
+  </head>
+  <body>
+    <script>
+      // code without Nullish coalescing operator
+      let value = null;
+      let isNullish = value;
+
+      if (isNullish === null || isNullish === undefined) {
+        isNullish = "Nilai default";
+      }
+      alert(isNullish);
+
+      // code with Nullish coalescing operator
+      let parameter = null;
+      let data = parameter ?? "Nilai default";
+
+      alert(data);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optional-chaining</title>
+  </head>
+  <body>
+    <script>
+      // Optional chaining: is an operator that used for accessing a nullish property in object
+
+      // code with optional chaining
+      const fruits = {
+        color: {
+          kind: "serbian apple",
+        },
+      };
+      const result = fruits?.color?.kind;
+      console.info(result);
+
+      // code without optional chaining
+      const person = {};
+      alert(person.address.country); // error in console
+    </script>
+  </body>
+</html>

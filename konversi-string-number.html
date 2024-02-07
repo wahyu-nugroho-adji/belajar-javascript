@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      {
+        const data_string = "1";
+        const data_string2 = 1;
+        const append = data_string + data_string2;
+
+        // konversi string ke number
+        const stringToNumber = parseInt(data_string) + data_string2;
+
+        document.writeln(`<p>${append}</p>`); // 11
+        document.writeln(stringToNumber); // 2
+      }
+
+      {
+        const data_number = 1;
+        const data_number2 = 1;
+
+        // konversi number ke string
+        const numberToString = data_number.toString() + data_number2.toString();
+
+        document.writeln(numberToString);
+      }
+
+      {
+        document.writeln(`<p>${parseInt(1.1)}</p>`);
+        document.writeln(`<p>${parseFloat(1.1)}</p>`);
+        document.writeln(`<p>${Number(1.5)}</p>`);
+
+        /* 
+            Error Tolerance: Evaluate if the first value
+                             is a number and ignore text/string
+                             value after.
+
+                             If first value is not a number
+                             display NaN as a result.
+
+            Work for parseInt() and parseFloat
+            doesn't work for Number().
+        */
+        document.writeln(`<p>${parseInt("text")}</p>`);
+        document.writeln(`<p>${parseFloat("1.1abc")}</p>`);
+        document.writeln(`<p>${parseInt("1text")}</p>`);
+        document.writeln(`<p>${parseFloat("abc1.1")}</p>`);
+
+        document.writeln(`<p>${Number("text")}</p>`);
+        document.writeln(`<p>${Number("1text")}</p>`);
+      }
+
+      {
+        // Operasi pada NaN
+        const value = Number("text"); // NaN
+        const totalNumber = value + 1; // NaN
+
+        document.writeln(`<p>${totalNumber}</p>`);
+        document.writeln(`${isNaN(value)}`); // true
+      }
+    </script>
+  </body>
+</html>

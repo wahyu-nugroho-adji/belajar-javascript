@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data String</title>
+  </head>
+  <body>
+    <script>
+      document.writeln("data string"); // bisa ""/''/``
+      document.writeln(`<br>`);
+
+      // string concatenate
+      document.writeln("Nama:" + " " + "Wahyu" + " " + "Nugroho");
+      document.writeln(`<br>`);
+
+      //escape sequence
+      /* 
+      \n = enter/garis baru
+      \t = tab
+      \\ = garis miring
+      \' = kutip satu
+      \" = kutip dua
+      */
+
+      document.writeln(`<textarea cols='100' rows='10'>`);
+      document.write("Wahyu\n Nugroho\nAdji\n");
+      document.write("'Belajar JavaScript'\n");
+      document.write("\\home\\javascript\n");
+      document.writeln(`</textarea>`);
+    </script>
+  </body>
+</html>
